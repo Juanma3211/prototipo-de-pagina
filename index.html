@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es-UY">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffbc0d" />
+    <meta name="description" content="Un buen plan empieza en la mesa. Explorá tus favoritos y probá la experiencia de reservas de este concepto web inspirado en McDonald’s." />
+    <title>McDonald’s · Nos vemos en la mesa</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/interfaz/estilos.css" />
+    <script type="module" src="/interfaz/main.ts"></script>
+  </head>
+  <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18m-13 5h3"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-17a3 3 0 0 1 0 6m2 11v-3a6 6 0 0 0-2-4"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="i-burger" viewBox="0 0 24 24"><path d="M3 10c0-10 18-10 18 0H3Zm0 8h18c0 4-18 4-18 0ZM2 14h20m-18 0 4 2 4-2 4 2 4-2"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1-5 5 3 11 8 15 5-4 13-10 8-15Z"/></symbol>
+    </svg>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement"><span>Los buenos momentos se comparten.</span><span class="announcement-right"><span class="mini-dot"></span> Un concepto para Uruguay</span></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#inicio" class="brand" aria-label="McDonald’s, inicio"><svg class="arches" viewBox="0 0 64 56" aria-hidden="true"><path d="M4 53C4-13 28-13 32 39 36-13 60-13 60 53H49C49 3 38 0 37 53H27C26 0 15 3 15 53Z" fill="currentColor"/></svg><span>McDonald’s<span class="brand-caption">me encanta</span></span></a>
+        <nav class="desktop-nav" aria-label="Navegación principal"><a href="#menu">Nuestro menú</a><a href="#experiencia">La experiencia</a><a href="#locales">Locales</a></nav>
+        <div class="nav-actions"><button class="text-button my-bookings" type="button"><svg class="icon"><use href="#i-calendar"/></svg><span>Mis reservas</span></button><a class="button button-yellow button-small" href="#reservar">Reservar mesa<svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        <button id="mobile-menu-toggle" class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil" hidden><a href="#menu">Nuestro menú</a><a href="#experiencia">La experiencia</a><a href="#locales">Locales</a><button class="my-bookings" type="button">Mis reservas</button></nav>
+    </header>
+    <main id="contenido">
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy"><span class="eyebrow"><span class="red-dash"></span> TU GENTE. TU LUGAR. TU McDONALD’S.</span><h1>Hay planes.<br>Y hay <span class="highlight">planazos.</span></h1><p>Tu hamburguesa favorita, esa charla pendiente<br class="desktop-break"> y una mesa para compartir. ¿Nos vemos en Mc?</p><div class="hero-buttons"><a class="button button-red" href="#reservar">Reservá tu mesa<svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-link" href="#menu">Encontrá tu favorito<svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="hero-note"><span class="small-icon"><svg class="icon"><use href="#i-heart"/></svg></span><span>El sabor de siempre. Un nuevo plan.</span></div></div>
+          <div class="hero-art"><div class="hero-orbit"></div><span class="hero-background-type" aria-hidden="true">me<br>encanta.</span><img class="hero-food" src="/imagenes/hero.png" alt="Hamburguesa con queso y papas doradas en un envase rojo, imagen ilustrativa" fetchpriority="high" width="1024" height="1024"><div class="hero-sticker"><svg class="icon"><use href="#i-heart"/></svg><span>Juntos<br><strong>sabe mejor.</strong></span></div><span class="hero-spark spark-one" aria-hidden="true">✳</span><span class="hero-spark spark-two" aria-hidden="true">✳</span><span class="image-caption">Imagen ilustrativa</span></div>
+        </div>
+      </section>
+      <section id="reservar" class="reservation-section container" aria-labelledby="quick-title">
+        <div class="quick-heading"><div><span class="eyebrow">UN LUGAR PARA TU PRÓXIMO PLAN</span><h2 id="quick-title">La mesa está casi lista.</h2></div><span class="small-label"><svg class="icon"><use href="#i-clock"/></svg> Reservá en pocos pasos</span></div>
+        <form id="quick-form" class="quick-form"><label class="quick-field"><svg class="icon"><use href="#i-pin"/></svg><span><span class="field-label">Elegí tu local</span><select id="quick-local" name="local" required aria-label="Elegí tu local"></select></span></label><label class="quick-field"><svg class="icon"><use href="#i-calendar"/></svg><span><span class="field-label">¿Qué día nos vemos?</span><input id="quick-date" name="fecha" type="date" required aria-label="Fecha de reserva"></span></label><label class="quick-field"><svg class="icon"><use href="#i-users"/></svg><span><span class="field-label">¿Cuántos vienen?</span><select id="quick-guests" name="personas" aria-label="Cantidad de personas"><option value="1">1 persona</option><option value="2" selected>2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5">5 personas</option><option value="6">6 personas</option><option value="7">7 personas</option><option value="8">8 personas</option></select></span></label><button class="button button-yellow" type="submit">Buscar mesa<svg class="icon"><use href="#i-arrow"/></svg></button></form>
+        <p class="demo-note">Experiencia de demostración. Las reservas se guardan en este navegador y no se envían a un restaurante.</p><p id="quick-error" class="error-message" role="alert" hidden></p>
+      </section>
+      <section id="menu" class="menu-section container" aria-labelledby="menu-title">
+        <div class="section-heading"><div><span class="eyebrow">LOS DE SIEMPRE. TUS FAVORITOS.</span><h2 id="menu-title">Hay un Mc para cada antojo.</h2></div><span class="section-aside">Difícil elegir.<br>Fácil disfrutar.</span></div>
+        <div class="menu-filters" role="group" aria-label="Filtrar productos"><button class="filter active" data-category="todos" aria-pressed="true">Todos los favoritos</button><button class="filter" data-category="hamburguesas" aria-pressed="false">Hamburguesas</button><button class="filter" data-category="acompanamientos" aria-pressed="false">Para acompañar</button><button class="filter" data-category="combos" aria-pressed="false">El plan completo</button></div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        <p class="menu-disclaimer">Selección e imágenes ilustrativas para este concepto web. Consultá el menú vigente en tu restaurante.</p>
+      </section>
+      <section id="experiencia" class="experience-section"><div class="container experience-grid"><div class="experience-art" aria-hidden="true"><div class="table-graphic"><span class="table-word">buenos<br>momentos<span>en buena compañía.</span></span><span class="table-seat seat-one"></span><span class="table-seat seat-two"></span><span class="table-seat seat-three"></span><span class="table-seat seat-four"></span><svg class="table-heart icon"><use href="#i-heart"/></svg></div><span class="experience-spark">✳</span></div><div class="experience-copy"><span class="eyebrow">HACÉ LUGAR PARA LO BUENO</span><h2>Menos vueltas.<br>Más momentos juntos.</h2><p>Un almuerzo en familia, una salida con amigos o ese encuentro que se venía postergando. Elegí el plan; nosotros te guardamos el lugar en esta experiencia de prueba.</p><ol class="steps-list"><li><span>01</span><div><strong>Elegí dónde y cuándo</strong><p>Tu local, tu día y la mejor compañía.</p></div></li><li><span>02</span><div><strong>Encontrá tu horario</strong><p>Consultá las mesas disponibles y completá tus datos.</p></div></li><li><span>03</span><div><strong>Listo, ya tenés un plan</strong><p>Guardá el código y consultalo en Mis reservas.</p></div></li></ol><a href="#reservar" class="text-link">Vamos a reservar<svg class="icon"><use href="#i-arrow"/></svg></a></div></div></section>
+      <section id="locales" class="locations-section container" aria-labelledby="locations-title"><div class="section-heading"><div><span class="eyebrow">CERCA DE TUS GANAS DE COMPARTIR</span><h2 id="locations-title">Tu próximo punto de encuentro.</h2></div><span class="outline-badge"><svg class="icon"><use href="#i-pin"/></svg> Montevideo, Uruguay</span></div><div id="locations-grid" class="locations-grid"></div><p class="menu-disclaimer">Los locales, horarios y cupos de reserva son datos de ejemplo del prototipo.</p></section>
+      <section class="closing-banner"><div class="container closing-inner"><div><span class="eyebrow">LOS MEJORES PLANES SE HACEN JUNTOS</span><h2>¿Y si nos vemos en Mc?</h2></div><a class="button button-dark" href="#reservar">Sí, reservemos una mesa<svg class="icon"><use href="#i-arrow"/></svg></a></div></section>
+    </main>
+    <footer class="site-footer container"><div class="footer-top"><a class="brand footer-brand" href="#inicio"><svg class="arches" viewBox="0 0 64 56" aria-hidden="true"><path d="M4 53C4-13 28-13 32 39 36-13 60-13 60 53H49C49 3 38 0 37 53H27C26 0 15 3 15 53Z" fill="currentColor"/></svg><span>me encanta.</span></a><nav aria-label="Navegación del pie"><a href="#menu">Nuestro menú</a><a href="#locales">Locales</a><button class="my-bookings text-button" type="button">Mis reservas</button><button id="privacy-button" class="text-button" type="button">Privacidad de la demo</button></nav></div><div class="footer-bottom"><span>Concepto independiente de diseño · 2026</span><span>McDonald’s y sus marcas pertenecen a sus respectivos titulares. Sitio de demostración no oficial.</span></div></footer>
+    <dialog id="booking-dialog" aria-labelledby="booking-title" class="modal booking-modal"><div id="booking-content"></div></dialog>
+    <dialog id="info-dialog" aria-labelledby="info-title" class="modal"><div id="info-content"></div></dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>
